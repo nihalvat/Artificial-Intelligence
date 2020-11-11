@@ -1,0 +1,124 @@
+Missionaries and Cannibals Problem with 3 missionaries and 3 cannibals on the left side of the river.
+States are shown by (m_l, c_l) B |   (m_r, c_r) where
+	m_l: missionaries on the left side
+	c_l: cannibals on the left side
+	m_r: missionaries on the right side
+	c_r: cannibals on the right side
+	B and | indicate the position of the boat and the river, respectively.
+
+ Initial state is (3, 3) B |   (0, 0)
+
+
+ Breadth First Search:
+The solution path is (in reverse order): 
+(0, 0)     | B (3, 3)
+(2, 0)   B |   (1, 3)
+(1, 0)     | B (2, 3)
+(3, 0)   B |   (0, 3)
+(2, 0)     | B (1, 3)
+(2, 2)   B |   (1, 1)
+(1, 1)     | B (2, 2)
+(1, 3)   B |   (2, 0)
+(0, 3)     | B (3, 0)
+(2, 3)   B |   (1, 0)
+(1, 3)     | B (2, 0)
+(3, 3)   B |   (0, 0)
+
+elapsed time: 3.068 ms
+solution found at depth 11
+max depth searched: 11
+visited nodes: 54
+max open list size: 9
+
+ Depth First Search:
+The solution path is (in reverse order): 
+(0, 0)     | B (3, 3)
+(1, 1)   B |   (2, 2)
+(1, 0)     | B (2, 3)
+(3, 0)   B |   (0, 3)
+(2, 0)     | B (1, 3)
+(2, 2)   B |   (1, 1)
+(1, 1)     | B (2, 2)
+(1, 3)   B |   (2, 0)
+(0, 3)     | B (3, 0)
+(2, 3)   B |   (1, 0)
+(2, 2)     | B (1, 1)
+(3, 3)   B |   (0, 0)
+
+elapsed time: 6.677 ms
+solution found at depth 11
+max depth searched: 15
+visited nodes: 160
+max open list size: 9
+
+ Best First Search:
+The solution path is (in reverse order): 
+(0, 0)     | B (3, 3)
+(2, 0)   B |   (1, 3)
+(1, 0)     | B (2, 3)
+(3, 0)   B |   (0, 3)
+(2, 0)     | B (1, 3)
+(2, 2)   B |   (1, 1)
+(1, 1)     | B (2, 2)
+(1, 3)   B |   (2, 0)
+(0, 3)     | B (3, 0)
+(2, 3)   B |   (1, 0)
+(2, 2)     | B (1, 1)
+(3, 3)   B |   (0, 0)
+
+elapsed time: 0.661 ms
+solution found at depth 11
+max depth searched: 11
+visited nodes: 18
+max open list size: 8
+
+ A* Search:
+The solution path is (in reverse order): 
+(0, 0)     | B (3, 3)
+(2, 0)   B |   (1, 3)
+(1, 0)     | B (2, 3)
+(3, 0)   B |   (0, 3)
+(2, 0)     | B (1, 3)
+(2, 2)   B |   (1, 1)
+(1, 1)     | B (2, 2)
+(1, 3)   B |   (2, 0)
+(0, 3)     | B (3, 0)
+(2, 3)   B |   (1, 0)
+(1, 3)     | B (2, 0)
+(3, 3)   B |   (0, 0)
+
+elapsed time: 0.957 ms
+solution found at depth 11
+max depth searched: 11
+visited nodes: 25
+max open list size: 9
+
+ IDA* Search:
+The solution path is (in reverse order): 
+(0, 0)     | B (3, 3)
+(2, 0)   B |   (1, 3)
+(1, 0)     | B (2, 3)
+(3, 0)   B |   (0, 3)
+(2, 0)     | B (1, 3)
+(2, 2)   B |   (1, 1)
+(1, 1)     | B (2, 2)
+(1, 3)   B |   (2, 0)
+(0, 3)     | B (3, 0)
+(2, 3)   B |   (1, 0)
+(2, 2)     | B (1, 1)
+(3, 3)   B |   (0, 0)
+
+elapsed time: 3.997 ms
+solution found at depth 11
+max depth searched: 12
+visited nodes: 113
+max open list size: 8
+
+
+Please enter one of the keywords below to continue with:
+waterjug -> water jug problem
+mission  -> missionaries and cannibals problem
+eight    -> eight puzzle problem
+kenken   -> kenken puzzle (challenging problem)
+quit     -> to quit
+

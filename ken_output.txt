@@ -1,0 +1,6 @@
+KenKen Puzzle (Challenging Problem)
+Three puzzle samples are available in the input folder:
+(1) 5x5 Easy
+(2) 5x5 Hard
+(3) 9x9 Hard
+Enter 1,2 or 3 to see the puzzles' initial state and possible next steps:  
